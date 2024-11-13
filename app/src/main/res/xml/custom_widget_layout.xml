@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/widgetBackgroundColor">
+
+    <!-- Contenido del widget con alineación centrada -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp">
+
+        <!-- Texto de título del widget -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acciones Rápidas"
+            style="@style/WidgetTextStyle"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Botones de acción -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp">
+
+            <Button
+                android:layout_marginEnd="8dp"
+                android:text="Ir al Inicio"
+                style="@style/WidgetButtonStyle" />
+
+            <Button
+                android:text="Perfil"
+                style="@style/WidgetButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
